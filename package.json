@@ -28,8 +28,8 @@
   },
   "lint-staged": {
     "*.{js,jsx,ts,tsx}": [
-      "yarn lint",
-      "yarn format"
+      "eslint",
+      "prettier --write --ignore-path .gitignore './**/*.{js,jsx,ts,tsx}'"
     ]
   }
 }
